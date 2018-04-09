@@ -1,0 +1,84 @@
+body {
+	background: url(http://patterns1.com/wp-content/uploads/2015/09/Fast-Food-Sandwiches-Food-Pattern-Background-by-Patterns1-com.jpg);
+	background-repeat: repeat;
+}
+
+.area {
+	display: flex;
+	flex-direction: row;
+	/* width: 60%;
+	height: 20%; */
+}
+
+.menu {
+	cursor: hand;
+	flex-grow: 1;
+	padding: 2px;
+	transition: flex-grow 0.6s;
+}
+
+.title {
+	background-color: #ffc0cb;
+	opacity: 0.7;
+	text-align: center;
+	font-family: monospace;
+	font-size: 2vmax;
+	font-weight: bold;
+	margin: 0 0 0 0.2;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	transition: opacity 0.1;
+}
+
+.menu-items {
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	margin: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s, opacity 0.4s linear;
+}
+
+.item {
+	background-color: #e5ffcc;
+	opacity: 0.7;
+	border-radius: 5px;
+	flex-grow: 1;
+	list-style-type: none;
+	font-family: monospace;
+	font-size: 1.1vmax;
+	font-style: italic;
+	color: black;
+	margin: 2 0 0 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	transition: font-size 0.2s linear;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu:hover .menu-items {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu:hover .title {
+	opacity: 1;
+	background-color: #ff7373;
+	font-size: 2.4vmax;
+}
+
+.menu:hover {
+	flex-grow: 3;
+}
+
+.item:hover {
+	background-color: #7fff00;
+	opacity: 1;
+	font-weight: bold;
+	font-size: 1.5vmax;
+}

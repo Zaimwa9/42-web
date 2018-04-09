@@ -1,0 +1,129 @@
+.row {
+	display: flex;
+	height: 3vw;
+	width: 90%;
+}
+
+.myimage img {
+	margin-left: 25%;
+	width: 35%;
+	height: 25%;
+	max-width: 500px;
+	max-height: 350px;
+}
+
+.element {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	height: 100%;
+	width: 5.55%;
+	line-height: 0px;
+}
+
+#second {
+	position: relative;
+	margin-top: 30px;
+}
+
+#second .element {
+	background-color: cyan;
+}
+
+
+.mytitle {
+	margin-left: 20%;
+	font-size: 1vmax;
+	font-weight: bold;
+}
+
+.blank {
+	height: 100%;
+	width: 5.55%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.content {
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	width: 100%;
+	margin-bottom:10px;
+}
+
+.top-element {
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	margin-top: 12%;
+}
+
+.bot-element {
+	position: absolute;
+	top: 87%;
+	margin-left: 2%;
+}
+
+.number {
+	font-size: 0.5vmax;
+	text-align: left;
+	text-align: top;
+	margin: auto;
+	margin-left: 3px ;
+}
+
+.weight {
+	font-size: 0.5vmax;
+	text-align: right;
+	text-align: top;
+	margin: auto;
+	margin-right: 3px;
+}
+
+.symbol {
+	width: 100%;
+	font-size: 1.1vmax;
+	font-weight: bold;
+	text-align: center;
+}
+
+.name {
+	font-size: 0.5vmax;
+	text-align: bottom;
+	text-align: center;
+	margin: auto;
+	margin-top: -7px;
+}
+
+#orange {
+	background-color: #ed4728;
+}
+
+#red {
+	background-color: #ff6666;
+}
+
+#pink {
+	background-color: pink;
+}
+
+#green {
+	background-color: #00ff7f;
+}
+
+#yellow {
+	background-color: #ffffb3;
+}
+
+#purple {
+	background-color: #a2b5db;
+}
+
+#cyan {
+	background-color: cyan;
+}

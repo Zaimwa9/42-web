@@ -1,0 +1,68 @@
+<!doctype html>
+
+<style>
+#bal {
+	background-color: red;
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	margin-top: 25%;
+	;
+}
+</style>
+
+<html>
+<body>
+	<div class="balloon" id="bal" onclick="blow()" onmouseout="deflate()"></div>
+</body>
+<script>
+const bal = document.getElementById("bal");
+
+function blow() {
+	var new_width = bal.attributes[0].ownerElement.clientWidth >= 420 ? 200 : bal.attributes[0].ownerElement.clientWidth + 10;
+	var new_height = bal.attributes[0].ownerElement.clientHeight >= 420 ? 200 : bal.attributes[0].ownerElement.clientHeight + 10;
+	var widthstr = "width:" + (new_width) + "px;";
+	var heightstr = "height:" + (new_height) + "px;";
+	var color = "background: " + pickColor(window.getComputedStyle( bal ,null).getPropertyValue('background-color'));
+	bal.setAttribute("style", widthstr + heightstr + color);
+}
+
+function pickColor(color) {
+	switch (color) {
+		case "rgb(0, 255, 0)":
+			return ("rgb(0, 0, 255)");
+			break;
+		case "rgb(255, 0, 0)":
+			return ("rgb(0, 255, 0)");
+			break;
+		case "rgb(0, 0, 255)":
+			return ("rgb(255, 0, 0)");
+			break;
+	}
+}
+
+function depickColor(color) {
+	switch (color) {
+		case "rgb(0, 0, 255)":
+			return ("rgb(0, 255, 0)");
+			break;
+		case "rgb(0, 255, 0)":
+			return ("rgb(255, 0, 0)");
+			break;
+		case "rgb(255, 0, 0)":
+			return ("rgb(0, 0, 255)");
+			break;
+	}
+}
+
+function deflate() {
+	var new_width = bal.attributes[0].ownerElement.clientWidth <= 200 ? 200 : bal.attributes[0].ownerElement.clientWidth - 5;
+	var new_height = bal.attributes[0].ownerElement.clientHeight <= 200 ? 200 : bal.attributes[0].ownerElement.clientHeight - 5;
+	var widthstr = "width:" + (new_width) + "px;";
+	var heightstr = "height:" + (new_height) + "px;";
+	var color = "background: " + depickColor(window.getComputedStyle( bal ,null).getPropertyValue('background-color'));
+	bal.setAttribute("style", widthstr + heightstr + color);
+}
+</script>
+</html>

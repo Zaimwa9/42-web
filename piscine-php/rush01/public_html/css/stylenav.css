@@ -1,0 +1,98 @@
+.area {
+  margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	/* width: 60%;
+	height: 20%; */
+}
+
+.menu {
+	cursor: hand;
+	flex-grow: 1;
+	padding: 2px;
+	transition: flex-grow 0.6s display 0.5s;
+}
+
+.title {
+	background-color: #ffc0cb;
+	border-radius: 5px;
+	opacity: 0.7;
+	text-align: center;
+	font-family: monospace;
+	font-size: 2vmax;
+	font-weight: bold;
+	margin: 0 0 0 0.2;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	transition: opacity 0.1 display 0.5s;
+}
+
+.menu-items {
+	display: flex;
+	flex-direction: row;
+	padding: 2px;
+	margin: 0;
+	opacity: 1;
+	transition: visibility 0.3s, opacity 0.4s display 0.5s linear;
+}
+
+#cats {
+	background-color: #FFF0F3;
+	display: none;
+	right: 5000em;
+	transition: display 1s flex-grow: 0.5s right 0.1s linear;
+}
+
+#homepage {
+  background-color: lightblue;
+  flex-grow: 18;
+	font-size: 2vmax;
+}
+
+#navmenu {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.item {
+	border-radius: 5px;
+	flex-grow: 1;
+	list-style-type: none;
+	font-family: monospace;
+	font-size: 1.1vmax;
+	font-style: italic;
+	color: black;
+	margin: 2 0 0 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	transition: font-size 0.2s linear;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu:hover #cats {
+	display: block;
+	opacity: 1;
+	right: 0;
+}
+
+#navmenu:hover .title {
+	opacity: 1;
+	background-color: #ff7373;
+	font-size: 2vmax;
+}
+
+.menu:hover {
+	flex-grow: 3;
+}
+
+.item:hover {
+	background-color: #7fff00;
+	opacity: 1;
+	font-weight: bold;
+	font-size: 1.5vmax;
+}

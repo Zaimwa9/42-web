@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <style>
+      body {
+
+      }
+    </style>
+  </head>
+
+<body>
+  <input type="text" name="left" id="left" value="0">
+  <select name="select" id="operator">
+    <option value="plus">+</option>
+    <option value="minus">-</option>
+    <option value="time">*</option>
+    <option value="div">/</option>
+    <option value="mod">%</option>
+  </select>
+  <input type="text" name="right" id="right" value="0">
+  <input type="submit" name="submit" value="Try me!" onclick="calc()">
+</body>
+
+<script>
+
+	var time = setTimeout(timer, 30000);
+
+	function timer() {
+		alert("Please, use me...");
+		time = setTimeout(timer, 30000);
+	}
+
+	function calc() {
+		clearTimeout(time);
+		time = setTimeout(timer, 30000);
+		const operator = document.getElementById("operator").value;
+		const it1 = Number(document.getElementById("left").value);
+		const it2 = Number(document.getElementById("right").value);
+		if (it1 < 0 || it2 < 0)
+			return (alert("Error :()"));
+		if ((operator == "mod" || operator == "div") && it2 == 0) {
+			console.log("It’s over 9000!");
+			return(alert("It’s over 9000!"));
+		}
+		return (alert(compute(operator, it1, it2)));
+	}
+
+	function compute(operator, it1, it2) {
+		switch (operator) {
+			case "plus":
+				return (it1 + it2);
+				break;
+			case "minus":
+				return (it1 - it2);
+				break;
+			case "time":
+				return (it1 * it2);
+				break;
+			case "div":
+				return (it1 / it2);
+				break;
+			case "mod":
+				return (it1 % it2);
+				break;
+		}
+	}
+</script>
+</html>
