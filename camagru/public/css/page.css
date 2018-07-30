@@ -1,0 +1,169 @@
+#page {
+  border-style: groove;
+  border-width: 1px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.picture {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.comment_section {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
+  max-width: 60.75rem;
+  margin: 0 auto 0;
+  padding: 0 1.25rem;
+}
+
+.comment_section {
+  font-family: 'ubuntu';
+}
+
+.delete_com {
+  display: inline-flex;
+  min-width: 16px;
+  min-height: 11px;
+  width: 5%;
+  height: 1%;
+  margin-top: 1%;
+}
+
+#more {
+  position: relative;
+  text-align: center;
+  cursor: hand;
+  left: 40%;
+  margin-bottom: 10px;
+  top: 0px;
+}
+
+#likeimg {
+  display: inline-block;
+  min-width: 20px;
+  max-width: 23px;
+  margin-right: 1rem;
+}
+
+#likecnt {
+  display: inline-block;
+}
+
+/*
+Com css
+*/
+
+
+p {
+  line-height: 1.3125rem;
+  word-wrap: break-word;
+}
+
+
+.comment_block {
+  margin-bottom: 1.25rem;
+  display: table;
+  width: 100%;
+  min-height: 5.3125rem;
+}
+
+.com_box {
+  padding: 1rem;
+  background-color: #ebedee;
+  display: table-cell;
+  vertical-align: top;
+  border-radius: 0.1875rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+.comment-block textarea {
+  width: 100%;
+  resize: none;
+}
+
+.com_content {
+  max-width: 264px;
+  margin-bottom: 1.25rem;
+}
+
+.imgdesc {
+  color: #acb4c2;
+  font-size: 0.875rem;
+}
+
+.com_desc {
+  float: left;
+}
+
+.delete_com {
+  float: right;
+}
+
+.dl_button {
+  float: right;
+  margin-right: 2%;
+  font-family: 'ubuntu';
+}
+
+.delete_pic {
+  float: left;
+  max-width: 20px;
+  min-width: 20px;
+  margin-left: 3%;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+  display: block;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  color: #555f77;
+}
+
+#sub_com {
+  background-color: white;
+  border-style: groove;
+  border-width: 1px;
+}
+
+#comment_input {
+  width: 100%;
+}
+
+.submit {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.submit:hover{
+  border-bottom: solid;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ced2db;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #ced2db;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #ced2db;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #ced2db;
+}
+
+::placeholder {
+  opacity: 1;
+}
